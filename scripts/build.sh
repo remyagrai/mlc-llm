@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 git submodule update --init --recursive
+pip install --upgrade pip
+pip install cython
 
 cd 3rdparty/tvm
 mkdir -p build && cd build
